@@ -1,0 +1,18 @@
+.weatherTitle{
+    background-color: blue;
+    margin: 0px -18px;
+    display: block;
+    padding-top: 41px;
+    padding-bottom: 56px;
+    border-bottom: 5px solid black;
+}
+
+.searchBar{
+    display: block;
+    margin: 0 auto;
+}
+
+.cityTitle{
+    padding-left: 32px;
+    font-size: 30px;
+}
