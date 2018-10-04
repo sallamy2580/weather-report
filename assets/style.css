@@ -21,16 +21,22 @@
 
 .citySelect {
     background-color: brown;
-    padding-bottom: 370px;
+    padding-bottom: 186px;
     border-right: 5px solid black;
+    border-bottom: 5px solid black;
 }
 
 .cityData{
     background-color: blueviolet;
+border-bottom: 5px solid black;
 }
-
 .currentCity{
     padding-left: 32px;
     font-size: 30px;
     padding-top: 18px;
+}
+
+.data{
+    padding-left: 32px;
+    font-size: 22px;
 }
