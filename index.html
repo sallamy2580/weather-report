@@ -15,14 +15,21 @@
     <header class="col-12 header">
         <h1 class="weatherTitle text-center">Weather Dashboard</h1>
     </header>
-    <container class="citySearch col-12">
-        <div class="row col-3">
-            <h2 class="cityTitle text-center">Search City Forecast</h2>
-            <input class="searchBar" placeholder="Enter City">
-            <button class="submitCity">Submit</button>
+    <container class="citySearch">
+        <div class="row">
+            <div class="col-3 citySelect">
+                <h2 class="cityTitle text-center">Search City Forecast</h2>
+                <input class="searchBar" placeholder="Enter City">
+                <button class="submitCity">Submit</button>
+            </div>
+            <div class="col-9 cityData">
+                <h2 class="currentCity"></h2>
+                <p class="temp"></p>
+                <p class="humidity"></p>
+                <p class="windSpeed"></p>
+                <p class="UVIndex"></p>
+            </div>
         </div>
-        
-        
     </container>
 
 

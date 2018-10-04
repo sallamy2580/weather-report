@@ -8,11 +8,29 @@
 }
 
 .searchBar{
-    display: block;
-    margin: 0 auto;
+    /* display: block;
+    margin: 0 auto; */
+    margin-left: 38px;
 }
 
 .cityTitle{
     padding-left: 32px;
     font-size: 30px;
+    padding-top: 18px;
+}
+
+.citySelect {
+    background-color: brown;
+    padding-bottom: 370px;
+    border-right: 5px solid black;
+}
+
+.cityData{
+    background-color: blueviolet;
+}
+
+.currentCity{
+    padding-left: 32px;
+    font-size: 30px;
+    padding-top: 18px;
 }
