@@ -46,6 +46,7 @@ $(document).ready(function(){
             }).then(function(response) {
             console.log(response);// response from api with all the data
             
+            
             var createCard = $("<div>") //create new div
             createCard.addClass("col-2 cards") // Add a class
             $(".fiveDayForecast").append(createCard) //add div to fiveDayForcast Div on HTML
@@ -66,11 +67,6 @@ $(document).ready(function(){
             $(".hum1").text(response.list[0].main.humidity)
                         
         });
-    }
-
-    function fiveDayCards(){
-        
-            
     }
     
     getCity();

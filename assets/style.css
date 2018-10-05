@@ -1,10 +1,12 @@
 .weatherTitle{
-    background-color: blue;
+    background-color:#09458f;
     margin: 0px -18px;
     display: block;
     padding-top: 41px;
-    padding-bottom: 56px;
-    border-bottom: 5px solid black;
+    padding-bottom: 16px;
+    /* border-bottom: 5px solid white; */
+    color: white;
+    font-size: 32px;
 }
 
 .searchBar{
@@ -14,21 +16,25 @@
 }
 
 .cityTitle{
-    padding-left: 32px;
-    font-size: 30px;
+    padding-left: 27px;
+    font-size: 22px;
     padding-top: 18px;
+    padding-bottom: 15px;
 }
 
 .citySelect {
-    background-color: brown;
+    background-color: #d3d3d3;
     padding-bottom: 186px;
-    border-right: 5px solid black;
-    border-bottom: 5px solid black;
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
+    border-top: 5px solid white;
 }
 
 .cityData{
-    background-color: blueviolet;
-border-bottom: 5px solid black;
+    background-color: #375c89;
+    border-bottom: 5px solid white;
+    color: white;
+    border-top: 5px solid white;
 }
 .currentCity{
     padding-left: 32px;
@@ -39,4 +45,13 @@ border-bottom: 5px solid black;
 .data{
     padding-left: 32px;
     font-size: 22px;
+}
+
+.cards{
+    background:#157eb9;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5%;
+    padding: 16px;
+    color: white;
 }
