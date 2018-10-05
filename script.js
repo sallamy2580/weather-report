@@ -45,18 +45,31 @@ $(document).ready(function(){
             method: "GET"
             }).then(function(response) {
             console.log(response);// response from api with all the data
-            fiveDayCards();
+            
+            var createCard = $("<div>") //create new div
+            createCard.addClass("col-2 cards") // Add a class
+            $(".fiveDayForecast").append(createCard) //add div to fiveDayForcast Div on HTML
+
+            var dateHeader = $("<p>") //create new h4
+            dateHeader.addClass("text-center dateHeader") //add class
+            $(".cards").append(dateHeader); //take div with class of cards and append the new div with the new h4
+            $(".dateHeader").text(response.list[0].dt_txt)// change the text of the new to the date
+            
+            var dayOneTemp = $("<p>")  
+            dayOneTemp.addClass("text-center temp1 temp")
+            $(".cards").append(dayOneTemp);
+            $(".temp1").text(response.list[0].main.temp)
+            
+            var dayOneHum = $("<p>")  
+            dayOneHum.addClass("text-center hum1 hum")
+            $(".cards").append(dayOneHum);
+            $(".hum1").text(response.list[0].main.humidity)
+                        
         });
     }
 
     function fiveDayCards(){
-        var createCard = $("<div>")
-            createCard.addClass("col-2 cards")
-            $(".fiveDayForecast").append(createCard)
-
-        var dateInCard = $("<h4>")
-            dateInCard.addClass("text-center")
-            $(".cards").text("Date");
+        
             
     }
     
