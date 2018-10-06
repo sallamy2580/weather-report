@@ -21,6 +21,7 @@
                 <h2 class="cityTitle">Search City Forecast</h2>
                 <input class="searchBar" placeholder="Enter City">
                 <button class="submitCity">Submit</button>
+                <div class="searchHistory"></div>
             </div>
             <div class="col-9 cityData">
                 <h2 class="currentCity"></h2>
@@ -30,10 +31,15 @@
                 <p class="UVIndex data"></p>
             </div>
         </div>
-        <div class="row col-12">
+        <div class="row col-12 fiveDay">
             <h2 class="currentCity"></h2>
         </div>
-        <div class="row col-12 fiveDayForecast">
+        <div class="row col-12 fiveDay fiveDayForecast">
+           <div class="dayOne"></div>
+           <div class="dayTwo"></div>
+           <div class="dayThree"></div>
+           <div class="dayFour"></div>
+           <div class="dayFive"></div>
         </div>
 
     </container>
@@ -43,7 +49,7 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-    <script src="path/to/dayjs/dayjs.min.js"></script>
+    <!-- <script src="path/to/dayjs/dayjs.min.js"></script> -->
 
     <script src="script.js"></script>
 </body>
