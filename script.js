@@ -32,7 +32,7 @@ $(document).ready(function(){
             var wholeTemp = Math.floor(convertTemp)
 
             // Show the data in the cityData section 
-            $(".temp").text("Temperature: " + wholeTemp + " Degrees F");
+            $(".temp").text("Temperature: " + wholeTemp + "\u00B0"+"F");
             $(".humidity").text("Humidity: "+response.main.humidity+"%");
             $(".windSpeed").text("Wind Speed: "+response.wind.speed+"mph"); 
             $(".UVIndex").text("UV Index: "+response.main.humidity);
@@ -132,9 +132,12 @@ $(document).ready(function(){
                     createCard.append(forecastImg);
 
                 // Show the Temp
-                var dayOneTemp = $("<p>")  
-                    dayOneTemp.addClass("temp1")
-                    dayOneTemp.text("Temp: "+day.main.temp)
+                var temp = day.main.temp;
+                var convertTemp = (temp - 273.15) * 1.80 + 32;
+                var wholeTemp = Math.floor(convertTemp);
+                var dayOneTemp = $("<p>")  ;
+                    dayOneTemp.addClass("temp1");
+                    dayOneTemp.text("Temp: "+wholeTemp+ "\u00B0"+"F");
                     createCard.append(dayOneTemp);
             
                 // Show the humidity
@@ -171,6 +174,12 @@ $(document).ready(function(){
         $(".submitCity").trigger('click'); 
         $(".searchBar").attr("placeholder", "Enter City")
     });
+
+    // clear storage button
+    $(".clear").on("click", function(){
+        
+        localStorage.clear();
+    })
 
     // Call main functions
     getCity();
