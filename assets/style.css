@@ -38,9 +38,9 @@
     border-top: 5px solid white;
 }
 .currentCity{
-    padding-left: 32px;
     font-size: 30px;
     padding-top: 18px;
+    padding-left: 25px;
 }
 
 .data{
@@ -53,8 +53,8 @@
     display: block;
     margin: 0 auto;
     border-radius: 0%;
-    padding-bottom: 3%;
     color: white;
+    box-shadow: 0px 0px 6px black;
 }
 
 .fiveDay{
@@ -93,7 +93,28 @@
 
 .dateHeader{
     font-size: 32px;
+    padding: 14px 0px;
+
 }
+
+.clear {
+    border: none;
+    background-color: red;
+    height: 44px;
+    width: 107px;
+    border-radius: 8%;
+    color: white;
+    font-weight: 700;
+}
+
+.currentDate{
+    display: block;
+    margin: 0 auto;
+    float: left;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
 
 @media only screen and (max-width: 600px){
 

@@ -172,13 +172,14 @@ $(document).ready(function(){
     //refresh the page as soon as the page loads. I've coded this to show data on clicks so I entered a value of Denver in the input so when the page loads, the value of Denver is "clicked" and shows the data. 
     $(document).ready(function(){
         $(".submitCity").trigger('click'); 
-        $(".searchBar").attr("placeholder", "Enter City")
+        
     });
-
+    
     // clear storage button
     $(".clear").on("click", function(){
-        
         localStorage.clear();
+       // remove buttons on click
+       $(".cityHistoryBtn").removeAttr("style").hide();
     })
 
     // Call main functions
