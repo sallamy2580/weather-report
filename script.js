@@ -116,7 +116,7 @@ $(document).ready(function(){
 
                 // Create the card and add a class
                 var createCard = $("<div>") 
-                    createCard.addClass("col-2 rounded cards") 
+                    createCard.addClass("col-xs-12 col-sm-2 rounded cards") 
                 
                 // Show the date
                 var dateHeader = $("<p>") 
