@@ -18,7 +18,7 @@ $(document).ready(function(){
         var cityDataTwo = $(".searchBar").val();
 
         // API Query URL
-        var queryURLTwo = "http://api.openweathermap.org/data/2.5/weather?q=" + cityDataTwo + "&appid=c64ae898096dd7b2fab2998d1d228df8"
+        var queryURLTwo = "https://api.openweathermap.org/data/2.5/weather?q=" + cityDataTwo + "&appid=c64ae898096dd7b2fab2998d1d228df8"
         
         // AJAX CALL
         $.ajax({
@@ -50,7 +50,7 @@ $(document).ready(function(){
             var cityData = $(".searchBar").val();
 
             // API Query URL
-            var queryURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + cityData + "&appid=c64ae898096dd7b2fab2998d1d228df8"
+            var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityData + "&appid=c64ae898096dd7b2fab2998d1d228df8"
             
             // AJAX CALL
             $.ajax({
@@ -97,7 +97,7 @@ $(document).ready(function(){
         var cityDataThree = $(".searchBar").val();
 
         // Query URL
-        var queryURLThree = "http://api.openweathermap.org/data/2.5/forecast?q=" + cityDataThree + "&cnt=5&appid=c64ae898096dd7b2fab2998d1d228df8"
+        var queryURLThree = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityDataThree + "&cnt=5&appid=c64ae898096dd7b2fab2998d1d228df8"
         
         
         //AJAX CALL
@@ -128,7 +128,7 @@ $(document).ready(function(){
                 // Show the weather icon
                 var forecastImg = $("<img>")
                     forecastImg.addClass("weatherIcon");
-                    forecastImg.attr("src", "http://openweathermap.org/img/w/" + day.weather[0].icon + ".png")
+                    forecastImg.attr("src", "https://openweathermap.org/img/w/" + day.weather[0].icon + ".png")
                     createCard.append(forecastImg);
 
                 // Show the Temp
