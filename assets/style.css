@@ -25,7 +25,7 @@
 
 .citySelect {
     background-color:#eeeeee;
-    padding-bottom: 186px;
+   
     border-right: 5px solid white;
     border-bottom: 5px solid white;
     border-top: 5px solid white;
@@ -54,7 +54,7 @@
     display: block;
     margin: 0 auto;
     border-radius: 0%;
-    
+    padding-bottom: 3%;
     color: white;
 }
 
@@ -79,6 +79,7 @@
     border: none;
     font-size: 20px;
     box-shadow: 0px 0px 4px rgb(59, 57, 57);
+    height: 30px;
 }
 
 .submitCity{
