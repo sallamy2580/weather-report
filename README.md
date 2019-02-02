@@ -1,17 +1,35 @@
-# 06 Server-Side APIs: Weather Dashboard
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
+# Weather Dashboard
 
-Use the [OpenWeather API](https://openweathermap.org/api) to retrieve weather data for cities. The documentation includes a section called "How to start" that will provide basic setup and usage instructions. Use `localStorage` to store any persistent data.
+## https://jaredseefried.github.io/weather-dashboard/
 
-## User Story
+![Weather Dashboard](./assets/images/screenshot.jpg)
 
-```
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
-```
+## Table of Contents
 
-https://jaredseefried.github.io/weather-dashboard/ 
+- **[Description](#Description)**
+- **[Installation Requirements](#Installation-Requirements)**
+- **[Usage](#Usage)**
+- **[License](#License)**
+- **[Contributors](#Contributors)**
+- **[Tests](#Tests)**
+- **[Questions](#Questions)**
 
-![weather dashboard ](./Assets/images/screenshot.jpg)
+# Description
+
+Using [OpenWeather API](https://openweathermap.org/api) I am retrieving weather data for cities entered in the search bar. Denver is the default city populated. As a user, I want to search for a city and I need to be presented with current weather conditions, temperature, humidity and wind speed. The web app is built on Node to act as a server side API. 
+
+# Installation Requirements
+
+1. Clone repo by entering in the CLI: git clone https://github.com/jaredseefried/weather-dashboard.git
+
+# License
+
+MIT
+
+# Have Questions?
+
+## [Github Profile: github.com/jaredseefried](https://github.com/jaredseefried "Title")
+
+Please email me at jared.seefried@yahoo.com if you have additional questions.

@@ -45,7 +45,7 @@ $(document).ready(function(){
         // on click event listener on the submit button
         $(".submitCity").click(function(event){
             event.preventDefault();
-
+            
             // Variable for what city entered in the search bar
             var cityData = $(".searchBar").val();
 
@@ -150,12 +150,17 @@ $(document).ready(function(){
              })
             })
         });
-    }
+        $('.searchBar').keypress(function(e){
+            if(e.which == 13){//Enter key pressed
+                $('.submitCity').click();
+                }
+            })
+        }
 
     // Create buttons from the cities that were called and put them below the search bar
     function createBtns(){
     $(".searchHistory").empty();
-
+            
         // Loop the cityHistory Array
        for (var i = 0; i < cityHistory.length; i++) {
            // create and show the buttons as the cities from the array
@@ -165,6 +170,7 @@ $(document).ready(function(){
             cityHistoryBtn.text(cityHistory[i]);
             $(".searchHistory").append(cityHistoryBtn);
             localStorage.setItem("city", JSON.stringify(cityHistory));
+            
             }
             
         }
@@ -182,9 +188,30 @@ $(document).ready(function(){
        $(".cityHistoryBtn").removeAttr("style").hide();
     })
 
+    //Render History 
+    function renderHistory(){
+        // Variable for the value that was intered in the search bar
+        var cityData = $(".cityHistoryBtn").attr("data-name");
+
+        // API Query URL
+        var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityData + "&appid=c64ae898096dd7b2fab2998d1d228df8"
+        
+        // AJAX CALL
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+            }).then(function(response) {
+                
+            console.log(response)
+    
+    })
+}
+
     // Call main functions
+    
     getCity();
     fiveDayForecast();
     createBtns();
+    renderHistory();
 });
 
