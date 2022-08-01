@@ -2,8 +2,6 @@
 
 # Weather Dashboard
 
-## https://jaredseefried.github.io/weather-dashboard/
-
 ![Weather Dashboard](./assets/images/screenshot.jpg)
 
 ## Table of Contents
@@ -22,7 +20,7 @@ Using [OpenWeather API](https://openweathermap.org/api) I am retrieving weather 
 
 # Installation Requirements
 
-1. Clone repo by entering in the CLI: git clone https://github.com/jaredseefried/weather-dashboard.git
+1. Clone repo by entering in the CLI: git clone https://github.com/sallamy2580/weather-report.git
 
 # License
 
@@ -30,6 +28,6 @@ MIT
 
 # Have Questions?
 
-## [Github Profile: github.com/jaredseefried](https://github.com/jaredseefried "Title")
+## [Github Profile: github.com/sallamy2580](https://github.com/sallamy2580 "Title")
 
-Please email me at jared.seefried@yahoo.com if you have additional questions.
+Please email me at polarisfar7@gmail.com if you have additional questions.
